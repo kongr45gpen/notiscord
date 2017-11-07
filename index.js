@@ -69,10 +69,6 @@ github.on('push', function (repo, ref, data) {
                     name: "Branch",
                     value: data.ref.split('/',3)[2],
                     inline: true
-                },{
-                    name: "ID",
-                    value: commit.id.slice(0,7),
-                    inline: true
                 }],
                 timestamp: new Date(commit.timestamp),
                 thumbnail: {
